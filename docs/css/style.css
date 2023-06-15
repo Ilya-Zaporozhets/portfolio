@@ -303,10 +303,6 @@ img {
   padding: 10px;
 }
 
-.header .active {
-  color: var(--accent-color);
-}
-
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,6 +339,10 @@ img {
 
 .header__item:not(:last-child) {
   margin-right: 33px;
+}
+
+.active {
+  color: var(--accent-color);
 }
 
 .resume__wrapper {
