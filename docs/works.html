@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  </head>
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css?_v=20230615133107"
+    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+    crossorigin="anonymous"
+  />
+
+  <link rel="stylesheet" href="css/style.min.css?_v=20230615133107" />
+  <title>John's portfolio</title>
+</head>
+
+
+
+  <body>
+
+    <header class="header">
+  <div class="header__wrapper container">
+    <ul class="header__list list">
+      <li class="header__item">
+        <a href="../works.html" class="header__link link">Works</a>
+      </li>
+      <li class="header__item">
+        <a href="../blog.html" class="header__link link">Blog</a>
+      </li>
+      <li class="header__item">
+        <a href="./" class="header__link link">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <button type="button" class="burger-menu" data-menu-button>
+    <svg class="burger-icon">
+      <use href="img/icons.svg#menu"></use>
+    </svg>
+  </button>
+  <div class="mobile-menu" data-menu>
+    <button type="button" class="burger-btn_close" data-menu-close>
+      <svg class="burger-btn__close-icon">
+        <use href="img/icons.svg#close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-navigation__list list">
+      <li class="mobile-navigation__item">
+        <a
+          href="./works.html"
+          class="mobile-navigation__link link mobile-current"
+          >Works</a
+        >
+      </li>
+      <li class="mobile-navigation__item">
+        <a href="./blog.html" class="mobile-navigation__link link">Blog</a>
+      </li>
+      <li class="mobile-navigation__item">
+        <a href="./index.html" class="mobile-navigation__link link">Contact</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+    <main>
+
+     <div class="work__wrapper container">
+  <b class="work__title">Work</b>
+  <ul class="work-list list">
+    <li class="work-list__item" data-modal-open>
+      <div class="works-list__overlay">
+        <div class="works-list__img">
+          <picture>
+            <source
+              srcset="img/dashboards.webp 1x, img/dashboards@2x.webp 2x"
+              type="image/webp"
+            />
+            <source
+              srcset="img/dashboards.jpg 1x, img/dashboards@2x.jpg 2x"
+            />
+            <img
+              class="team__img"
+              src="img/dashboards.jpg"
+              alt="Dashboards"
+              width="100%"
+            />
+          </picture>
+        </div>
+        <div class="work-list__text">
+          <h3 class="work-list__title">Designing Dashboards</h3>
+          <div>
+            <span class="work-list__date">2020</span>
+            <span class="work-list__theme">Dashboard</span>
+          </div>
+          <p class="work-list__descriptions">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="work-list__item" data-modal-open>
+      <div class="works-list__overlay">
+        <div class="works-list__img">
+          <picture>
+            <source
+              srcset="img/malayalam.webp 1x, img/malayalam@2x.webp 2x"
+              type="image/webp"
+            />
+            <source srcset="img/malayalam.jpg 1x, img/malayalam@2x.jpg 2x" />
+            <img
+              class="team__img"
+              src="img/malayalam.jpg"
+              alt="malayalam"
+              width="100%"
+            />
+          </picture>
+        </div>
+        <div class="work-list__text">
+          <h3 class="work-list__title">36 Days of Malayalam type</h3>
+          <div>
+            <span class="work-list__date">2018</span>
+            <span class="work-list__theme">Typography</span>
+          </div>
+          <p class="work-list__descriptions">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="work-list__item" data-modal-open>
+      <div class="works-list__overlay">
+        <div class="works-list__img">
+          <picture>
+            <source
+              srcset="img/portraits.webp 1x, img/portraits@2x.webp 2x"
+              type="image/webp"
+            />
+            <source srcset="img/portraits.jpg 1x, img/portraits@2x.jpg 2x" />
+            <img
+              class="team__img"
+              src="img/portraits.jpg"
+              alt="Portraits"
+              width="100%"
+            />
+          </picture>
+        </div>
+        <div class="work-list__text">
+          <h3 class="work-list__title">Vibrant Portraits of 2020</h3>
+          <div>
+            <span class="work-list__date">2018</span>
+            <span class="work-list__theme">Illustration</span>
+          </div>
+          <p class="work-list__descriptions">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="work-list__item" data-modal-open>
+      <div class="works-list__overlay">
+        <div class="works-list__img">
+          <picture>
+            <source
+              srcset="img/Components.webp 1x, img/Components@2x.webp 2x"
+              type="image/webp"
+            />
+            <source
+              srcset="img/Components.jpg 1x, img/Components@2x.jpg 2x"
+            />
+            <img
+              class="team__img"
+              src="img/Components.jpg"
+              alt="Components"
+              width="100%"
+            />
+          </picture>
+        </div>
+        <div class="work-list__text">
+          <h3 class="work-list__title">Components</h3>
+          <div>
+            <span class="work-list__date">2018</span>
+            <span class="work-list__theme">Components, Design</span>
+          </div>
+          <p class="work-list__descriptions">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="backdrop is-hidden" data-modal-close data-modal>
+  <div class="modal container">
+    <h2 class="modal__title">Designing Dashboards with usability in mind</h2>
+
+    <div class="modal__overlay">
+      <span class="modal__date">2020</span>
+      <span class="modal__theme">Dashboard, User Experience Design</span>
+    </div>
+
+    <p class="modal__descriptions">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+    <picture>
+      <source
+        srcset="img/designing-desh.webp 1x, img/designing-desh@2x.webp 2x"
+        type="image/webp"
+      />
+      <source
+        srcset="img/designing-desh.png 1x, img/designing-desh@2x.png 2x"
+      />
+      <img
+        class="team__img"
+        src="img/designing-desh.png"
+        alt="Fragment of work"
+      />
+    </picture>
+
+    <h3 class="modal__secondary-title">Heading 1</h3>
+    <p class="modal__text">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+
+    <picture>
+      <source
+        srcset="img/car.webp 1x, img/car@2x.webp 2x"
+        type="image/webp"
+      />
+      <source srcset="img/car.png 1x, img/car@2x.png 2x" />
+      <img class="team__img" src="img/car.png" alt="Fragment of work" />
+    </picture>
+
+    <picture>
+      <source
+        srcset="img/setings.webp 1x, img/setings@2x.webp 2x"
+        type="image/webp"
+      />
+      <source srcset="img/setings.png 1x, img/setings@2x.png 2x" />
+      <img class="team__img" src="img/setings.png" alt="Fragment of work" />
+    </picture>
+  </div>
+</div>
+
+   
+    </main>
+
+
+    <footer class="footer">
+  <div class="footer__wrapper container">
+    <ul class="footer-list list">
+      <li class="footer-list__item">
+        <a href="" class="footer-list__link link">
+          <svg class="footer-list__icon">
+            <use href="img/icons.svg#fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-list__item">
+        <a href="" class="footer-list__link link">
+          <svg class="footer-list__icon">
+            <use href="img/icons.svg#insta"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-list__item">
+        <a href="" class="footer-list__link link">
+          <svg class="footer-list__icon">
+            <use href="img/icons.svg#twiter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-list__item">
+        <a href="" class="footer-list__link link">
+          <svg class="footer-list__icon">
+            <use href="img/icons.svg#Linkedin"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <a href="" class="footer-copy link"
+      >Copyright &copy;2020 All rights reserved.
+    </a>
+  </div>
+</footer>
+
+
+   <script src="js/app.min.js?_v=20230615133107"></script>
+</html>
